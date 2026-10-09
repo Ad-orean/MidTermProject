@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+x:Class="MidTermProject.Views.Product4DetailPage"
+xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+Title="Shadow Tonic">
+
+    <VerticalStackLayout Padding="20">
+
+        <Label Text="Shadow Tonic" FontSize="28" />
+        <Label Text="$18.00" TextColor="Red" />
+        <Label Text="Forbidden void essence." />
+        <Label Text="Out of stock" TextColor="Gray" />
+
+        <Label Text="Quantity" />
+        <Entry x:Name="QuantityEntry" Text="1" />
+
+        <Button Text="Add to cart" BackgroundColor="Orange" IsEnabled="False" />
+
+        <Label x:Name="MessageLabel" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

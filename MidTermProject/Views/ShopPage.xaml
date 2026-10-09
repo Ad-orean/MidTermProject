@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+x:Class="MidTermProject.Views.ShopPage"
+xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+Title="Arcane Potions">
+
+    <VerticalStackLayout Padding="20">
+
+        <Label Text="Potions" FontSize="28" Margin="0,0,0,20" />
+
+        <CollectionView
+x:Name="ProductsView"
+SelectionMode="Single"
+SelectionChanged="OnProductSelected">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Label Text="{Binding}" FontSize="20" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
